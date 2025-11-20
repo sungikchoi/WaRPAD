@@ -1,4 +1,6 @@
-# Code of Training-free Detection of AI-generated images via Cropping Robustness.
+# Code of Training-free Detection of AI-generated images via Cropping Robustness [NIPS 2025]
+
+link: https://arxiv.org/abs/2511.14030
 
 ## Requirements
 
@@ -16,7 +18,6 @@ Synthbuster: https://ieeexplore.ieee.org/document/10334046 , https://loki.disi.u
 
 Deepfake-LSUN-Bedroom: http://github.com/jonasricker/diffusion-model-deepfake-detection
 
-After downloading the code, change the address on the utils.py 
 
 ## Testing the code
 
@@ -24,7 +25,6 @@ For the replication of our WaRPAD in GenImage,
 
 Run `python final_imgn.py` 
 
-We also provide the test code for AEROBLADE and RIGID, which were used in the experiment.
 
 
 
