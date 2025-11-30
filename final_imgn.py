@@ -99,7 +99,7 @@ def cal_metric(model, input_tensor):
         yl, yh = dwt(input_tensor)  # yl: low-pass residual, yh: list of high-pass coefficients
         yl_zeros = torch.zeros_like(yl)
         pert_hf = idwt((yl_zeros, yh))
-        perturbed_tensor = input_tensor + args.noise_level * pert_hf #/ torch.norm(pert_hf, dim=[2,3],keepdim=True)
+        perturbed_tensor = input_tensor - args.noise_level * pert_hf #/ torch.norm(pert_hf, dim=[2,3],keepdim=True)
 
         #perturbed_tensor = input_tensor + args.noise_level * torch.rand_like(input_tensor)
         outputs = model.forward_features(input_tensor, None)["x_norm_clstoken"]
