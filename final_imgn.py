@@ -17,7 +17,7 @@ import torchvision
 from torch.utils.data import DataLoader, Subset
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--seed','-seed',default=1557,type=int)
+parser.add_argument('--seed','-seed',default=1,type=int)
 parser.add_argument('--prep_size', default=896, type =int)
 parser.add_argument('--patch_size', default=224, type = int)
 parser.add_argument('--noise_level', default=0.1, type=float)
